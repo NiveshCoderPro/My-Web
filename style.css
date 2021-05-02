@@ -1,0 +1,61 @@
+.topnav {
+    overflow: hidden;
+    background-color:rgb(0, 174, 255);
+    width:100%;
+    top:0;
+}
+.topnav a {
+  float:left;
+  color:rgb(0, 17, 255);
+  font-family:'Bukhari Script';
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+ @font-face {
+     font-family:'BadaBoom BB';
+     src: url("BADABB__.TTF");
+ }
+ @font-face {
+     font-family: 'House-O-Rama-Kingpin';
+     src: url("Housearama-Kingpin.otf");
+ }
+ @font-face {
+     font-family: 'SF-Pro-Display';
+     src: url("SF-Pro-Display-Black.otf");
+ }
+ #News2 {
+     font-family: 'SF-Pro-Display';
+     font-size:18px;
+ }
+ h3 {
+     font-family: 'House-O-Rama-Kingpin';
+ }
+ h1 {
+     font-family: 'BadaBoom BB';
+ }
+body {
+    text-align: center;
+    background-image:url("")
+}
+#myCanvas {
+    background-color:white;
+    border-color:red;
+    border-width:10px;
+    border-style:dashed;
+}
+.topnav a:hover {
+    color:royalblue;
+}
+#News2 {
+    font-family:'SF-Pro-Display';
+    font-size: 48px;
+}
+p {
+    font-family:'BadaBoom BB'
+}
+.P {
+    color:red;
+    text-decoration: none;
+}

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Animation and Games Blog</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+       <script src = "main.js"></script>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a class = "active">Animation and Games Blog</a>
+            <div class = "topnav-right">
+                <a href = "#Home">Home</a>
+                <a href = "#News">Team</a>
+                <a href = "#ChannelofTeam">Channel of the Team</a>
+            </div>
+        </div>
+        <section id = "Home">
+        <h1>Hi Welcome to Games Blog</h1>
+        <h3>Here is a Whiteboard to draw a circle</h3>
+        <canvas id = "mycanvas" height = "600" width = "800">
+
+        </canvas>
+        </section>
+        <script>
+            canvas = document.getElementById("mycanvas");
+                ctx = canvas.getContext("2d");
+
+                color = "red";
+                ctx.beginPath();
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 5;
+                ctx.arc(200, 100, 50, 0, 2 * Math.PI);
+                ctx.stroke();
+
+                canvas.addEventListener("mousedown", my_mousedown);
+
+                function my_mousedown(e) {
+                    mouse_x = e.clientX - canvas.offsetLeft;
+                    mouse_y = e.clientY - canvas.offsetTop;
+                    console.log(mouse_x + mouse_y);
+                    circle(mouse_x, mouse_y);
+                }
+                function circle(mouse_x, mouse_y) {
+                    ctx.beginPath();
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 5;
+                    ctx.arc(mouse_x, mouse_y, 50, 0, 2 * Math.PI);
+                    ctx.stroke();
+                }
+        </script>
+        <section id = "News">
+        <h1 id = "News2">Team</h1>
+        <span>
+            <h3>Adhyan</h3>
+            <img src = "adhyanCar.jpeg" width="300">
+            <p>Content Creator</p>
+            <h3>Nivesh</h3>
+            <img src = "pixlr-bg-result (3).png" width = "300">
+            <p>Website Builder</p>
+        </span>
+        </section>
+        <section id = "ChannelofTeam">
+            <h1><a href = "https://www.youtube.com/channel/UChBhPgUiKLfXB9H_gdprm_g" class = "P">Cousin Productions</a></h1>
+            <h1><a href = "https://www.youtube.com/channel/UCgywCdMJLHaqwg9T6MYx_Xg" class = "P">Second channel of Nivesh</a></h1>
+            <h1><a href = "https://www.youtube.com/channel/UCoiaNtK9Hi212Tm7WrKWnEg" class = "P">Adhyan Sendhoor</a></h1>
+        </section>
+    </body>
+</html>
